@@ -25,7 +25,7 @@ print "name:%10s, age:%8d, height:%8.2f" % (name, age, height)
 # 制定占位符宽度（左对其）
 print "name:%-10s, age:%-8d, height:%-8.2f" % (name, age, height)
 # 制定占位符（0）
-print "name:%-10s, age:%08d, height:%08.2f" % (name, age,height)
+print "name:%-10s, age:%08d, height:%08.2f" % (name, age, height)
 # 科学计数法
 print "height:%.2e" % height
 # 四舍五入
