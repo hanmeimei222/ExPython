@@ -28,8 +28,14 @@ print "name:%-10s, age:%-8d, height:%-8.2f" % (name, age, height)
 print "name:%-10s, age:%08d, height:%08.2f" % (name, age,height)
 # 科学计数法
 print "height:%.2e" % height
+# 四舍五入
+print round(1.7333)
+# 英寸->厘米
 print "He's %d inches tall." % height
+print "He's %.2f cm tall." % float(height*2.54)
+# 磅->千克
 print "He's %d pounds heavy." % weight
+print "He's %.2f kg heavy." % float(weight*0.4536)
 print "Actually that's not too heavy."
 print "He's got %s eyes and %s hair." % (eyes, hair)
 print "His teeth are usually %s depending on the coffee." % teeth
