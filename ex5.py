@@ -50,5 +50,7 @@ print "He's got %s eyes and %s hair." % (eyes, hair)
 print "His teeth are usually %s depending on the coffee." % teeth
 
 # this line is tricky
-print "If I add %d, %d, and %d I get %d." % (age, height, weight, age + height + weight)
-print "test for '%%r' my name is %r, I am %r years old, my eyes is %r" % (name, age, eyes)
+print "If I add %d, %d, and %d I get %d."\
+      % (age, height, weight, age + height + weight)
+print "test for '%%r' my name is %r, I am %r years old, my eyes is %r"\
+      % (name, age, eyes)
