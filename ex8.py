@@ -6,7 +6,7 @@ print formatter % (True, False, True, False)
 print formatter % (formatter, formatter, formatter, formatter)
 print formatter % (
       "I had this thing.",
+      "But it didn't sing sing sing sing.",
       "That you could type up right.",
-      "But it didn't sing.",
       "So I said goodnight."
 )
