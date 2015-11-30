@@ -15,7 +15,7 @@ print "Let's talk about %s." % name
 # 十进制整型 %d 或 %i
 print "He's %d years old." % age
 # 无符号整型 %u
-print "He's %u years old." % 0xEF3
+print "He's %u years old." % (-1&0xFFFFFFFF)  # 0xEF3
 # 十六进制 %x 或 %X
 print "He's %x years old." % age
 # 八进制 %o
