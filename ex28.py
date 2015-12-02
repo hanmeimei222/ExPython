@@ -1,5 +1,5 @@
 print True and True  # True
-print False and True  # False 
+print False and True  # False
 print 1 == 1 and 2 == 1  # False
 print "test" == "test"  # True
 print 1 == 1 or 2 != 1  # True
