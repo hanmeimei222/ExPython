@@ -27,7 +27,7 @@ class lexicon(object):
         while words:
             if words[0] in ['east', 'west', 'north', 'south']:
                 result.append(('direction', words[0]))
-            elif words[0] in ['go', 'kill', 'stop', 'eat']:
+            elif words[0] in ['go', 'kill', 'stop', 'eat', 'run']:
                 result.append(('verb', words[0]))
             elif words[0] in ['door', 'bear', 'princess', 'cabinet']:
                 result.append(('noun', words[0]))
