@@ -1,15 +1,18 @@
 from nose.tools import *
+from src.ex48 import lexicon
 from src.parser import *
 
 
 def test_parse_sentence_1():
-    result = parse_sentence([('verb', 'run'), ('direction', 'north')])
+    word_list = lexicon.scan("run north")
+    result = parse_sentence(word_list)
     sub = result.subject
     verb = result.verb
     obj = result.object
     assert_equal(sub, 'player')
     assert_equal(verb, 'run')
     assert_equal(obj, 'north')
+
 
 def test_parse_sentence_2():
     result = parse_sentence([('noun', 'bear'), ('verb', 'eat'), ('stop', 'the'), ('noun', 'honey')])
@@ -19,6 +22,7 @@ def test_parse_sentence_2():
     assert_equal(sub, 'bear')
     assert_equal(verb, 'eat')
     assert_equal(obj, 'honey')
+
 
 def test_parser_error():
     assert_raises(ParserError, parse_verb, [('noun', 'honey'), ('stop', 'the'), ('verb', 'eat')])
